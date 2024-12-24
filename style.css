@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    user-select: none;
+}
+
+.minesweeper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #4a752c;
+    color: white;
+    font-size: 25px;
+    i {
+        align-content: center;
+        padding-top: 2px;
+        cursor: pointer;
+    }
+}
+select {
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.game-icons {
+    display: flex;
+    gap: 10px;
+    i {
+        cursor: auto;
+    }
+}
+.fa-flag {
+    color: #fe0100;
+}
+.fa-clock {
+    color: #ff8800;
+}
+
+.game-board {display: grid;}
+.cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evenish {
+    background-color: #e5c29f;
+}
+.oddish {
+    background-color: #d7b899;
+}
+
+.hidden.evenish {
+    background-color: rgb(170, 220, 81);
+    &:hover {
+        background-color: rgb(193, 230, 126);
+    }
+}
+.hidden.evenish.hovered {
+    background-color: rgb(193, 230, 126);
+}
+
+.hidden.oddish {
+    background-color: rgb(162, 200, 73);
+    &:hover {
+        background-color: rgb(185, 225, 119);
+    }
+}
+.hidden.oddish.hovered{
+    background-color: rgb(185, 225, 119);
+}
+
+.number-1 {
+    color: #0000ff;
+}
+.number-2 {
+    color: #008200;
+}
+.number-3 {
+    color: #fe0000;
+}
+.number-4 {
+    color: #000084;
+}
+.number-5 {
+    color: #840000;
+}
+.number-6 {
+    color: #008284;
+}
+.number-7 {
+    color: #840084;
+}
+.number-8 {
+    color: #757575;
+}
+
+.hidden {
+    color: transparent;
+}
